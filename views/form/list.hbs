@@ -1,0 +1,28 @@
+<table class="table table-striped">
+    <thead>
+    
+    <tr>
+        <th>FullName</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>city</th>
+        
+        </tr>
+        
+    </thead>
+    <tbody>
+    {{#each list}}
+        <tr>
+        <td>{{this.fullName}}</td>
+        <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.city}}</td>
+            <td> 
+                
+              <!--  <a href="/form/delete/{{this._id}}"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>-->
+            </td>
+        </tr>
+        {{/each}}
+    
+    </tbody>
+</table>
